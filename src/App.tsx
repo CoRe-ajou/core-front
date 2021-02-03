@@ -1,25 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import { init } from 'emailjs-com';
+import EmailForm from './components/EmailForm';
 import './App.css';
 
 function App() {
+  init("user_31qB4cbozFu8ri8yb8wY4");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <EmailForm />
+    </>
   );
 }
 
