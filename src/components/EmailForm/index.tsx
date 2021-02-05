@@ -1,10 +1,11 @@
 import React from 'react';
-import { send, SERVICE_ID, TEMPLATE_ID } from 'emailjs-com';
+import { send } from 'emailjs-com';
 import { Controller, useForm } from 'react-hook-form';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
 import { captureFullPage } from 'utils/capture';
+import { SERVICE_ID, TEMPLATE_ID } from 'utils/emailjs';
 
 type FormData = {
   toEmail: string;
